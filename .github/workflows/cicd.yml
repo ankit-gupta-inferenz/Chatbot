@@ -17,7 +17,7 @@ jobs:
       - name: Build Docker Image
         run: docker build -t chatbot_django_app .
       - name: Publish image to Docker Hub
-        run: sudo docker push ankit974/chatbot_django_app:latest
+        run: sudo docker push ankit974/chatbot:latest
 
   deploy:
     needs: build
