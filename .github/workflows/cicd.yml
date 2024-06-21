@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu
 
     steps:
-      - name: Checkout Source1
+      - name: Checkout Source12
         uses: actions/checkout@v3
       - name: Login to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
