@@ -27,7 +27,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Pull image from Docker Hub
-        run: sudo docker pull ankit974/chatbot_django_app:latest
+        run: docker pull ankit974/chatbot_django_app:latest
       #- name: Check if Container Exists
         #run: |
           #if docker ps -a --format '{{.Names}}' | grep -q '^djangoContainer$'; then
