@@ -24,10 +24,10 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Pull image from Docker Hub
-        run: docker pull ankit974/chatbot_django_app:latest
+        run: sudo docker pull ankit974/chatbot_django_app:latest
       #- name: Check if Container Exists
         #run: |
           #if docker ps -a --format '{{.Names}}' | grep -q '^djangoContainer$'; then
