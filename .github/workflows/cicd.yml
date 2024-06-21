@@ -18,7 +18,7 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build Docker Image
-        run: docker build -t chatbot_django_app .
+        run: sudo docker build -t ankit974/chatbot_django_app:latest .
       - name: Publish image to Docker Hub
         run: sudo docker push ankit974/chatbot_django_app:latest
 
@@ -34,5 +34,5 @@ jobs:
           #  docker rm -f djangoContainer1
          # fi
       - name: Run Docker Container
-        run: sudo docker run -d -p 8001:80 chatbot_django_app 
+        run: sudo docker run -d -p 8001:80 ankit974/chatbot_django_app:latest 
 
