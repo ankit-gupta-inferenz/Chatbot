@@ -34,5 +34,5 @@ jobs:
           #  docker rm -f djangoContainer1
          # fi
       - name: Run Docker Container
-        run: sudo docker run -d -p 8001:80 ankit974/chatbot_django_app:latest 
+        run: sudo docker run -d -p 8002:80 ankit974/chatbot_django_app:latest 
 
