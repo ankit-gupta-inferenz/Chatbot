@@ -24,7 +24,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Pull image from Docker Hub
         run: sudo docker pull ankit974/chatbot_django_app:latest
